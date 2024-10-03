@@ -38,9 +38,11 @@ Desviación estándar: Es la raíz cuadrada de la varianza, y representa la magn
 Potencia: Es la energía promedio por unidad de tiempo.
 SNR: Mide la relación entre la potencia de la señal útil y la potencia del ruido presente.
 Cada una de estos valores nos proporcionaron una visión diferente de las características de la señal y es útil para el análisis de la misma.
-![Sin título 44](https://github.com/user-attachments/assets/a2b032c8-c853-471a-8c56-3ff787cf2c36)
-![Sin título 43](https://github.com/user-attachments/assets/c3203296-6180-4a24-9a37-d01c0f887f53)
-![Sin título 42](https://github.com/user-attachments/assets/530488a1-6d43-4f53-acce-d149f3a4e029)
+![Sin título 49](https://github.com/user-attachments/assets/a8c0ba00-4187-434c-8e3d-787ffcc99fb0)
+![Sin título 48](https://github.com/user-attachments/assets/267df216-1b3d-4381-b8a2-c82c67f1dd08)
+![Sin título 47](https://github.com/user-attachments/assets/f27d7f69-226a-4f4f-9887-13c76dd27e1c)
+
+
 Segmento 1:
 Media: Supongamos que la media para este segmento es 0.15. Esto indicaría que las amplitudes de las contracciones en este primer segmento están algo por encima del nivel base, lo que puede sugerir que las contracciones aquí son moderadamente fuertes.
 Mediana: Con un valor de 0.12, la mediana está cerca de la media, lo que sugiere una señal bastante simétrica en torno a este valor medio, sin grandes picos o valles fuera de lo común.
@@ -88,3 +90,15 @@ Varianza: Una varianza de 0.005 muestra una señal casi plana, lo que refleja la
 Desviación Estándar: Un valor de 0.07 confirma que la señal apenas varía, lo que indica que el músculo está en fallo o muy cercano a este estado.
 Potencia: Con una potencia de 0.005, la energía es casi inexistente, lo que es consistente con un estado de fallo muscular.
 SNR: Un SNR de 0 dB o negativo indica que el ruido domina completamente la señal, lo que confirma que no hay contracción muscular efectiva y el músculo ha fallado completamente.
+
+
+Luego sacamos el promedio de todos los valores estadisticos se obtuvo lo siguiente:
+
+![Sin título 50](https://github.com/user-attachments/assets/c152cdbe-e3aa-4c55-b941-9303b7ae4d9f)
+Media: La media es casi cero, lo que sugiere que la señal está centrada alrededor de 0. 
+Mediana: El valor de la mediana es cercano a -1, lo que significa que la mayor parte de los valores de la señal tienden a ser ligeramente negativos. Esto podría ser consecuencia de la naturaleza oscilante de la señal.
+Varianza: La varianza es alta (2102.75), lo que indica que hay una dispersión significativa en los datos. Esto indica picos grandes o fluctuaciones importantes en la señal.
+Desviación estándar: Un valor de desviación estándar de 43.8 también es relativamente alto, lo que refuerza la idea de que la señal tiene componentes de alta amplitud, contribuyendo a la variabilidad general.
+Potencia: El valor de potencia (2103.14) es acorde con la varianza, ya que la potencia está relacionada con la energía total en la señal. Esta alta potencia confirma la presencia de componentes de alta amplitud.
+SNR: El promedio de SNR es 2.91, lo que implica que el ruido tiene una magnitud comparable a la señal. significa que el ruido está presente en niveles significativos debido a que en los ultimos segmentos el ruido es fuerte ya que va llegando a la fatiga
+
