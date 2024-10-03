@@ -2,6 +2,8 @@ Para la practica de este laboratorio lo primero que realizamos fue la adquisici√
 ![PHOTO-2024-10-01-21-07-51](https://github.com/user-attachments/assets/c79cb7a2-fe06-4348-b8da-9bc0ddf3a671)
 
 El codigo realizado en arduino es el siguiente 
+
+
 ![PHOTO-2024-10-01-21-06-15](https://github.com/user-attachments/assets/045a58f5-d139-4e69-9794-4c4c716d59e4)
 
 Luego le pedimos al sujeto de prueba que realizara una contracci√≥n
