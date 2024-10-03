@@ -8,6 +8,7 @@ Luego le pedimos al sujeto de prueba que realizara una contracción
 del musculo hasta llegar a la fatiga con una pesa de 10kg, en total tuvimos 7 repeticiones. 
 Con la señal capturada, la pasamos a Spyder para empezar a realizar su análisis. la manera de pasarla fue pasandooslas todos los vectores de voltaje valor y tiempo para poder imprimirla la señal exacta que teniamos en arduino, posterior a esto lo primero que hicimos fue limpiar un poco la señal eliminado el ruido en ella mediante el codigo, aplicamos un filtro pasa altas para deshacer los componentes de baja frecuencia, como el movimiento que podia tener la persona que o a la linea de base. Y un filtro pasa bajas para eliminar frecuencias altas no deseadas, como el ruido electromagnético o de interferencia de alta frecuencia. la frecuencia de muestreo con la que trabajmos fue: 9.95824193902174 Hz,  el tiempo de muestreo de 71 segundos
 ![Sin título 34](https://github.com/user-attachments/assets/2da21ea7-3c35-4513-a021-660829f3dc00)
+![WhatsApp Image 2024-10-03 at 13 49 38](https://github.com/user-attachments/assets/e354c212-0227-4ffd-a289-cfb98d0bd5e4)
 
 
 
