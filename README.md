@@ -44,8 +44,8 @@ Cada una de estos valores nos proporcionaron una visión diferente de las caract
 
 
 Segmento 1:
-Media: Supongamos que la media para este segmento es 0.15. Esto indicaría que las amplitudes de las contracciones en este primer segmento están algo por encima del nivel base, lo que puede sugerir que las contracciones aquí son moderadamente fuertes.
-Mediana: Con un valor de 0.12, la mediana está cerca de la media, lo que sugiere una señal bastante simétrica en torno a este valor medio, sin grandes picos o valles fuera de lo común.
+Media: Supongamos que la media para este segmento es 0.15. Esto indicaría que las amplitudes de las contracciones en este primer segmento están algo por encima del nivel base, lo que indica que las contracciones aquí son moderadamente fuertes.
+Mediana: Con un valor de 0.12, la mediana está cerca de la media, lo señal bastante simétrica en torno a este valor medio, sin grandes picos o valles fuera de lo común.
 Varianza: Si la varianza es 0.03, esto implica que las fluctuaciones en la señal no son extremadamente amplias, pero tampoco insignificantes, lo que concuerda con una señal de contracción moderada.
 Desviación Estándar: Un valor de 0.17 sugiere que las amplitudes varían moderadamente alrededor de la media, lo cual es consistente con contracciones musculares sostenidas pero no excesivamente fuertes.
 Potencia: Con una potencia de 0.04, la energía en este segmento es moderada, lo que coincide con una señal activa pero no extremadamente intensa.
@@ -53,8 +53,8 @@ SNR: Un valor de SNR de 5 dB indica que la señal es relativamente clara en comp
 
 Segmento 2:
 Media: En este segmento, si la media es 0.25, podríamos inferir que las contracciones son más intensas que en el segmento anterior.
-Mediana: Si la mediana es 0.22, indica que la mayoría de las amplitudes están concentradas cerca del valor medio, lo que sugiere una señal bastante estable.
-Varianza: Con una varianza de 0.07, este segmento muestra una mayor dispersión en las amplitudes de las contracciones, lo que podría estar asociado a variaciones más marcadas en la fuerza muscular.
+Mediana: Si la mediana es 0.22, indica que la mayoría de las amplitudes están concentradas cerca del valor medio, es una señal bastante estable.
+Varianza: Con una varianza de 0.07, este segmento muestra una mayor dispersión en las amplitudes de las contracciones, esta asociado a variaciones más marcadas en la fuerza muscular.
 Desviación Estándar: Un valor de 0.26 confirma esta dispersión, lo que indica que las contracciones aquí son más variables en cuanto a intensidad.
 Potencia: Si la potencia es 0.06, esto sugiere que hay más energía en este segmento, lo que coincide con la observación de que las contracciones son más fuertes.
 SNR: Un SNR de 6.5 dB indicaría que, en este segmento, la señal tiene una clara ventaja sobre el ruido, lo que indica una contracción muscular bien definida.
@@ -62,33 +62,33 @@ SNR: Un SNR de 6.5 dB indicaría que, en este segmento, la señal tiene una clar
 Segmento 3:
 Media: Si la media es 0.10, esto indica una disminución en la amplitud de las contracciones en comparación con los segmentos anteriores.
 Mediana: Con una mediana de 0.08, podríamos decir que la señal es más débil y las amplitudes están centradas más cerca del nivel base.
-Varianza: Un valor de varianza de 0.02 muestra una menor dispersión en la señal, lo que sugiere que las contracciones son menos intensas y menos variables.
+Varianza: Un valor de varianza de 0.02 muestra una menor dispersión en la señal, sugiere que las contracciones son menos intensas y menos variables.
 Desviación Estándar: Si la desviación estándar es 0.14, esto también refleja una reducción en la variabilidad de la señal.
-Potencia: Una potencia de 0.02 muestra una señal de menor energía, lo que sugiere que el músculo está realizando un trabajo menos intenso.
-SNR: Un SNR de 3 dB indicaría que el ruido comienza a ser más prominente en la señal, lo que puede ser indicativo de que el músculo se está acercando al fallo o está fatigado.
+Potencia: Una potencia de 0.02 muestra una señal de menor energía, el músculo está realizando un trabajo menos intenso.
+SNR: Un SNR de 3 dB indicaría que el ruido comienza a ser más prominente en la señal, es indicativo de que el músculo se está acercando al fallo o está fatigado.
 
 Segmento 4:
 Media: Si la media en este segmento es 0.08, indica que las contracciones son aún más débiles.
 Mediana: Con una mediana de 0.05, esto sugiere una señal muy cercana al nivel de reposo, lo que implica que las contracciones aquí son pequeñas.
 Varianza: Una varianza de 0.015 refleja una señal menos dispersa, lo que refuerza la idea de que las contracciones son menores.
 Desviación Estándar: Un valor de 0.12 indica que la señal es relativamente estable pero con fluctuaciones menores.
-Potencia: Con una potencia de 0.015, la energía es considerablemente menor, lo que indica una actividad muscular mucho más baja.
-SNR: Un SNR de 2 dB muestra que el ruido empieza a dominar la señal, lo que refleja una pérdida de control en las contracciones musculares debido a la fatiga.
+Potencia: Con una potencia de 0.015, la energía es considerablemente menor, es una actividad muscular mucho más baja.
+SNR: Un SNR de 2 dB muestra que el ruido empieza a dominar la señal, muestra una pérdida de control en las contracciones musculares debido a la fatiga.
 
 Segmento 5:
 Media: En este segmento, si la media es de 0.05, esto indica que las contracciones son muy pequeñas.
 Mediana: Con una mediana de 0.03, la señal se encuentra casi en el nivel de reposo, con muy poca actividad muscular visible.
-Varianza: Una varianza de 0.01 muestra muy poca dispersión en los datos, lo que implica que la señal es bastante constante y de baja amplitud.
-Desviación Estándar: Si el valor es 0.1, la señal varía muy poco alrededor de la media, lo que refleja una contracción casi insignificante.
-Potencia: Una potencia de 0.01 refuerza la idea de una señal débil, lo que sugiere muy poca energía en este segmento.
-SNR: Con un SNR de 1 dB, la señal es casi indistinguible del ruido, lo que sugiere que el músculo está casi completamente fatigado o en fallo.
+Varianza: Una varianza de 0.01 muestra muy poca dispersión en los datos,  la señal es bastante constante y de baja amplitud.
+Desviación Estándar: Si el valor es 0.1, la señal varía muy poco alrededor de la media, la contracción casi insignificante.
+Potencia: Una potencia de 0.01 refuerza la idea de una señal débil, muestra muy poca energía en este segmento.
+SNR: Con un SNR de 1 dB, la señal es casi indistinguible del ruido, el músculo está casi completamente fatigado o en fallo.
 
 Segmento 6:
 Media: Si la media es 0.02, indica que las contracciones son extremadamente débiles.
-Mediana: Con una mediana de 0.01, la mayoría de las amplitudes están cerca del cero, lo que sugiere una contracción casi nula.
-Varianza: Una varianza de 0.005 muestra una señal casi plana, lo que refleja la falta de contracción muscular.
-Desviación Estándar: Un valor de 0.07 confirma que la señal apenas varía, lo que indica que el músculo está en fallo o muy cercano a este estado.
-Potencia: Con una potencia de 0.005, la energía es casi inexistente, lo que es consistente con un estado de fallo muscular.
+Mediana: Con una mediana de 0.01, la mayoría de las amplitudes están cerca del cero, contracción casi nula.
+Varianza: Una varianza de 0.005 muestra una señal casi plana, es una falta de contracción muscular.
+Desviación Estándar: Un valor de 0.07 confirma que la señal apenas varía, el músculo está en fallo o muy cercano a este estado.
+Potencia: Con una potencia de 0.005, la energía es casi inexistente, estado de fallo muscular.
 SNR: Un SNR de 0 dB o negativo indica que el ruido domina completamente la señal, lo que confirma que no hay contracción muscular efectiva y el músculo ha fallado completamente.
 
 
