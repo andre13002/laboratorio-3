@@ -6,7 +6,7 @@ El codigo realizado en arduino es el siguiente
 
 Luego le pedimos al sujeto de prueba que realizara una contracción
 del musculo hasta llegar a la fatiga con una pesa de 10kg, en total tuvimos 7 repeticiones. 
-Con la señal capturada, la pasamos a Spyder para empezar a realizar su análisis. la manera de pasarla fue pasandooslas todos los vectores de voltaje valor y tiempo para poder imprimirla la señal exacta que teniamos en arduino, posterior a esto lo primero que hicimos fue limpiar un poco la señal eliminado el ruido en ella mediante el codigo, aplicamos un filtro pasa altas para deshacer los componentes de baja frecuencia, como el movimiento que podia tener la persona que o a la linea de base. Y un filtro pasa bajas para eliminar frecuencias altas no deseadas, como el ruido electromagnético o de interferencia de alta frecuencia. la frecuencia de muestreo con la que trabajmos fue: 9.95824193902174 Hz
+Con la señal capturada, la pasamos a Spyder para empezar a realizar su análisis. la manera de pasarla fue pasandooslas todos los vectores de voltaje valor y tiempo para poder imprimirla la señal exacta que teniamos en arduino, posterior a esto lo primero que hicimos fue limpiar un poco la señal eliminado el ruido en ella mediante el codigo, aplicamos un filtro pasa altas para deshacer los componentes de baja frecuencia, como el movimiento que podia tener la persona que o a la linea de base. Y un filtro pasa bajas para eliminar frecuencias altas no deseadas, como el ruido electromagnético o de interferencia de alta frecuencia. la frecuencia de muestreo con la que trabajmos fue: 9.95824193902174 Hz,  el tiempo de muestreo de 71 segundos
 ![Sin título 34](https://github.com/user-attachments/assets/2da21ea7-3c35-4513-a021-660829f3dc00)
 
 
@@ -29,6 +29,8 @@ Luego realizamos un fraccionamiento a esa señal de la ventana hanning, para pod
 ![Sin título 41](https://github.com/user-attachments/assets/4cd5e40f-8c67-484a-b959-1f936e3c83c3)
 
 La magnitud espectral en estos casos es elevada, lo que indica una fuerte actividad muscular. Sin embargo, a medida que la contracción se reduce o se acerca al fallo muscular, las magnitudes de las frecuencias dominantes disminuyen notablemente, y aunque las frecuencias más importantes siguen estando en el rango bajo, los picos se hacen más bajos y el espectro se dispersa. Esto significa que la señal se vuelve más ruidosa, con un aumento de energía en frecuencias más altas (mayores de 15 Hz), lo que refleja la falta de control muscular o la desorganización de la contracción a medida que se acerca al fallo. Este aumento de ruido en el espectro, combinado con la disminución en la magnitud de los picos en las frecuencias dominantes, es indicativo de la fatiga muscular, donde la eficiencia del movimiento y la coordinación del músculo comienzan a deteriorarse. Así, el análisis espectral de los fragmentos con contracciones más pequeñas o cercanas al fallo muestra una clara disminución de la energía en las frecuencias claves, acompañado de un incremento en el ruido, lo que sugiere una señal muscular más dispersos, reflejo de la incapacidad de mantener la contracción muscular eficazmente.
+![Sin título 52](https://github.com/user-attachments/assets/069e8259-87f6-4a6a-9225-d40a84efad60)
+![Sin título 53](https://github.com/user-attachments/assets/7cc1433d-f616-40cd-9061-d436bb2830b2)
 
 Con estas fracciones de la señal, calculamos los valores estadísticos de la señal que fueron: 
 Media: El valor promedio 
@@ -102,3 +104,29 @@ Desviación estándar: Un valor de desviación estándar de 43.8 también es rel
 Potencia: El valor de potencia (2103.14) es acorde con la varianza, ya que la potencia está relacionada con la energía total en la señal. Esta alta potencia confirma la presencia de componentes de alta amplitud.
 SNR: El promedio de SNR es 2.91, lo que implica que el ruido tiene una magnitud comparable a la señal. significa que el ruido está presente en niveles significativos debido a que en los ultimos segmentos el ruido es fuerte ya que va llegando a la fatiga
 
+realizamos el test de hipotesis 
+![Sin título 51](https://github.com/user-attachments/assets/9955df77-b01e-4f88-83f7-b49e7e04dd49)
+Dado que el p-valor = 0.0169, que es menor que el nivel de significancia comúnmente utilizado (0.05), rechazamos la hipótesis nula (H₀). Esto significa que hay evidencia suficiente para concluir que la media de la frecuencia ha cambiado significativamente en comparación con el valor de referencia.
+Este resultado nos dice que los filtros aplicados o los picos identificados han afectado la señal de manera significativa, lo que ha causado un cambio en la media de la frecuencia. Por lo tanto, podemos concluir que la señal procesada presenta una alteración significativa en sus características, específicamente en la media de su frecuencia, lo que debe tenerse en cuenta en cualquier análisis o interpretación de la señal filtrada.
+
+
+En una señal de electromiografía (EMG), los conceptos de respuesta rápida y respuesta lenta se refieren a la velocidad de activación y reclutamiento de las fibras musculares durante la contracción muscular. Estos términos están asociados con diferentes tipos de fibras musculares:
+
+1. Respuesta rápida (fibras de contracción rápida o fibras tipo II)
+Descripción: Las fibras musculares de tipo II son conocidas como fibras de contracción rápida. Estas fibras generan una fuerza mayor y se activan rápidamente durante movimientos explosivos o de alta intensidad, como saltos, levantamientos pesados, o movimientos de corta duración pero de alta demanda.
+Características en EMG:
+Generan señales EMG de alta frecuencia y gran amplitud.
+Están asociadas con actividades de corta duración y alta intensidad.
+Fatigan rápidamente debido a su dependencia de vías anaeróbicas para la producción de energía.
+Ejemplos de respuesta rápida: Sprint, levantamiento de pesas, saltos explosivos.
+2. Respuesta lenta (fibras de contracción lenta o fibras tipo I)
+Descripción: Las fibras musculares de tipo I son conocidas como fibras de contracción lenta. Estas fibras se activan de manera más gradual y están asociadas con actividades de baja intensidad y larga duración, como caminar, correr largas distancias o mantener una postura.
+Características en EMG:
+Generan señales EMG de menor frecuencia y amplitud en comparación con las fibras de contracción rápida.
+Están diseñadas para resistir la fatiga y pueden mantenerse activas durante periodos prolongados.
+Dependen principalmente del metabolismo aeróbico para obtener energía.
+Ejemplos de respuesta lenta: Caminata, maratón, actividades que requieren resistencia a largo plazo.
+Resumen
+Respuesta rápida: Fibras de contracción rápida (tipo II), alta intensidad, rápida activación, alta frecuencia en la EMG, pero se fatigan rápidamente.
+Respuesta lenta: Fibras de contracción lenta (tipo I), baja intensidad, activación más gradual, menor frecuencia en la EMG, pero alta resistencia a la fatiga.
+En una señal EMG, la diferenciación entre respuestas rápidas y lentas es crucial para el análisis de diferentes tipos de movimientos y el reclutamiento muscular en actividades físicas o estudios clínicos.
